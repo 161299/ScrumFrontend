@@ -1,0 +1,13 @@
+.loginfondo{
+    height: 400px;
+    width: 100%;
+    background-color: #0759A4;
+}
+.contain{
+    position: relative;
+}
+
+#formRegistro{
+        position: absolute;
+        top: 1px;
+}

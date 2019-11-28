@@ -1,0 +1,17 @@
+.fondo{
+    background-color: #012D74;
+    height: 100px;
+}
+.main_container{
+    background-image: url(./../img/sorcerer-4586454_1920.jpg);
+    background-size: 100%;
+    height: 900px;
+}
+
+.blanco{
+    color: #fff;
+}
+
+.blanco h1{
+    font-size: 80px;
+}
