@@ -43,11 +43,13 @@ function parseJwt (token) {
   console.log(id)
   traerPersona(id).then((data)=>{
     if (data.nombre) {
-      console.log("persona")
+      location.href="./normal.html"
+      localStorage.setItem("nombre ",data.nombre+" "+data.apellido)
     }else{
-      console.log("agencia")
+      location.href="./agencia.html"
+      localStorage.setItem("direccion",data.direccion)
     }
-    localStorage.setItem("nombre ",data.nombre+" "+data.apellido)
+    
     console.log(data)
   })
 
@@ -64,7 +66,7 @@ iniciarsesion.onclick=()=>{
         localStorage.setItem("token",data.access_token)       
         parseJwt(data.access_token) 
         
-        //location.href="./normal.html"
+        
       
     }}).catch(()=>{
     console.log("sadsa")
