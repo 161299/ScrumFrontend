@@ -29,26 +29,8 @@
     />
 
     <title></title>
-    <style>
-      #carga {
-        height: 100vh;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
   </head>
   <body>
-    <div id="carga" style="display:none;">
-      <h1 style="z-index: 1;color: aqua;">Cargando</h1>
-    </div>
-
     <header>
       <nav class="navbar navbar-expand-sm navbar-dark fondo">
         <a class="navbar-brand" href="#">Banco Gamers</a>
@@ -106,43 +88,8 @@
       </nav>
     </header>
 
-    <div class="row loginfondo"></div>
-    <div class="container">
-      <div class="row col-6">
-        <div class="col-md-12 mt-5 contain">
-          <form id="formLogin">
-            <div class="form-group">
-              <label for="">E-mail</label>
-              <input
-                type="text"
-                name=""
-                id="inputEmail"
-                class="form-control"
-                placeholder="ejm@gmail.com"
-                aria-describedby="helpId"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="">Password</label>
-              <input
-                type="password"
-                name=""
-                id="inputPassword"
-                class="form-control"
-                placeholder="*******"
-                aria-describedby="helpId"
-                required
-              />
-              <small id="helpId" class="text-muted">Olvide mi contraseña</small>
-            </div>
-            <button type="button" id="iniciarSesion" class="btn btn-outline-success curvas">
-              Iniciar Sesion
-            </button>
-          </form>
-          <hr />
-        </div>
-      </div>
+    <div class="container mt-5">
+      <h1>Menu de opciones</h1>
     </div>
 
     <script
@@ -161,7 +108,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./../js/waves.min.js"></script>
-    <script src="./../js/login.js"></script>
+    <script src="./../js/normal.js"></script>
     <script>
       Waves.attach(".curvas", ["waves-float"]);
       Waves.init();
