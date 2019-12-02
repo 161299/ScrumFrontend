@@ -13,7 +13,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="icon" type="image/" href="" />
+    <link rel='icon' type='image/jpg' href='./../img/favico.jpg' />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
@@ -28,7 +28,7 @@
       crossorigin="anonymous"
     />
 
-    <title></title>
+    <title>Vía BGP</title>
     <style>
       #carga {
         height: 100vh;
@@ -51,7 +51,7 @@
 
     <header>
       <nav class="navbar navbar-expand-sm navbar-dark fondo">
-        <a class="navbar-brand" href="#">Banco Gamers</a>
+        <a class="navbar-brand" href="./../../index.html"><img src="./../img/logo.png" width="150px" alt=""></a>
         <button
           class="navbar-toggler d-lg-none"
           type="button"
@@ -63,11 +63,11 @@
         ></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="./../../index.html"
                 >Personas<span class="sr-only">(current)</span></a
               >
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#"
                 >Empresas <span class="sr-only">(current)</span></a
@@ -106,10 +106,31 @@
       </nav>
     </header>
 
-    <div class="row loginfondo"></div>
+    <!-- <div class="row loginfondo"></div> -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./../img/FONDO.jpg" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./../img/sorcerer-4586454_1920.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./../img/fondo2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     <div class="container">
-      <div class="row col-6">
-        <div class="col-md-12 mt-5 contain">
+      <div class="row ml-5">
+        <div class="col-md-6 mt-5 contain">
           <form id="formLogin">
             <div class="form-group">
               <label for="">E-mail</label>
@@ -140,10 +161,43 @@
               Iniciar Sesion
             </button>
           </form>
-          <hr />
         </div>
       </div>
     </div>
+    <hr>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Acerca del BGP</h4>
+                <article style="display: block;">
+                    <p>¿Comó protegemos tus datos?</p>
+                    <p>Tasas y tarifas</p>
+                    <p>Nuestra historia y principios</p>
+                    <p>Transparencia de información</p>
+                    <p>Información de inversionistas BGP</p>
+                    <p>Labor Social BGP</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <h4>Otros servicios</h4>
+                <article>
+                    <p>¿Deseas recibir notificaciones?</p>
+                    <p>Trabaja con nosotros</p>
+                    <p>Actualiza tus datos</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <h4>Contacto</h4>
+                <article>
+                    <p>Canales de atención</p>
+                    <p>Banca por teléfono</p>
+                    <h3>(01) 311-9898</h3>
+                    <!-- <p>Redes Sociales</p> -->
+                </article>
+            </div>
+
+        </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

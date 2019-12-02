@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Vía BGP</title>
+    <link rel='icon' type='image/jpg' href='./../img/favico.jpg' />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +31,7 @@
 
     <header>
       <nav class="navbar navbar-expand-sm navbar-dark fondo">
-          <a class="navbar-brand" href="#">Banco Gamers</a>
+          <a class="navbar-brand" href="#"><img src="./../img/logo.png" width="150px" alt=""></a>
           <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
               aria-expanded="false" aria-label="Toggle navigation"></button>
           <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -41,9 +42,6 @@
                   <li class="nav-item">
                       <a class="nav-link" href="#">Empresas <span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./app/html/login.html">Sign In</a>
-                  </li>
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Token Digital</a>
                       <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -52,19 +50,18 @@
                       </div>
                   </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <form class="form-inline my-2 my-lg-0" action="./../../index.html">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerrar Sesión</button>
               </form>
           </div>
       </nav>
   </header>
 
     <main class="container-fluid">
-        <div class="row main">
-          <div class="col-md-6 primary mt-3">
-            <p>Bienvenido <span>Ingresar name</span></p>
-            <p>Su saldo en la cuenta <span>Ingresar id</span> es de <span>Ingresar Monto</span></p>
+        <div class="row main" >
+          <div class="col-md-6 primary mt-3" >
+            <p>Bienvenido <span id="usu"></span></p>
+            <p>Su saldo en la cuenta <span id="usuCuenta">Ingresar id</span> es de <span>Ingresar Monto</span></p>
           </div>   
           <div class="col-md-6 mt-5">
             <p>  Actualizar Saldo</p>
@@ -158,6 +155,40 @@
           </div>
         </div>
     </main>
+    <hr class="mt-5">
+    <footer class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Acerca del BGP</h4>
+                <article style="display: block;">
+                    <p>¿Comó protegemos tus datos?</p>
+                    <p>Tasas y tarifas</p>
+                    <p>Nuestra historia y principios</p>
+                    <p>Transparencia de información</p>
+                    <p>Información de inversionistas BGP</p>
+                    <p>Labor Social BGP</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <h4>Otros servicios</h4>
+                <article>
+                    <p>¿Deseas recibir notificaciones?</p>
+                    <p>Trabaja con nosotros</p>
+                    <p>Actualiza tus datos</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <h4>Contacto</h4>
+                <article>
+                    <p>Canales de atención</p>
+                    <p>Banca por teléfono</p>
+                    <h3>(01) 311-9898</h3>
+                    <!-- <p>Redes Sociales</p> -->
+                </article>
+            </div>
+
+        </div>
+    </footer>
 
 
     <!-- Optional JavaScript -->
@@ -173,6 +204,18 @@
       let btnTransferir = document.getElementById("btnTransferir")
       let btnRetirar = document.getElementById("btnRetirar")
       let btnDepositar = document.getElementById("btnDepositar")
+      let usu = document.getElementById("usu")
+      let usuCuenta = document.getElementById("usuCuenta")
+      let nombreUsu = localStorage.getItem("nombre ")
+      let numCuenta = localStorage.getItem("numero_cuenta")
+      console.log(nombreUsu)
+      console.log(numCuenta);
+      
+      usuCuenta.innerText = numCuenta
+      usu.innerText = nombreUsu
+      
+
+
 
       btnTransferir.onclick = ()=>{
         console.log("click");

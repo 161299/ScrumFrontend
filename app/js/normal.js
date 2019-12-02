@@ -31,8 +31,11 @@
             console.log(r)
 
             r.forEach(cuenta => {
+                
+                
+                
             let tr = document.createElement("tr")
-            tr.innerHTML= `<td>${cuenta.numero}</td><td>${cuenta.cue_saldo}</td><td>${cuenta.moneda}</td><td><button onclick="ir(${cuenta.id},${cuenta.numero})">Ir</button></td>` 
+            tr.innerHTML= `<td>${cuenta.numero}</td><td>${cuenta.cue_saldo}</td><td>${cuenta.moneda}</td><td><button class="btn btn-success btn-block" onclick="ir(${cuenta.id},${cuenta.numero})">Ir</button></td>` 
             tabla_body.appendChild(tr)   
             });
 
@@ -43,6 +46,9 @@
 
     let ir = (id,numero_cuenta) =>{
         console.log(id)
+        console.log('asda');
+        
+        
         localStorage.setItem("idcuenta",id)
         localStorage.setItem("numero_cuenta",numero_cuenta)
         location.href="./menu.html"
